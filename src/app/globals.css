@@ -2,8 +2,38 @@
 @import "tw-animate-css";
 
 @theme {
+  /* UI Component Fonts */
   --font-head: var(--font-head);
   --font-sans: var(--font-sans);
+
+  /* Body Text Fonts */
+  --font-syne: var(--font-syne);
+  --font-space-mono: var(--font-space-mono);
+  --font-rubik-mono-one: var(--font-rubik-mono-one);
+  --font-imperial-script: var(--font-imperial-script);
+  --font-poiret-one: var(--font-poiret-one);
+  --font-barlow-condensed: var(--font-barlow-condensed);
+  --font-ubuntu: var(--font-ubuntu);
+  
+  /* Emotive Fonts */
+  --font-unifraktur: var(--font-unifraktur);
+  --font-nosifer: var(--font-nosifer);
+  --font-henny-penny: var(--font-henny-penny);
+  --font-emilys-candy: var(--font-emilys-candy);
+  --font-mystery-quest: var(--font-mystery-quest);
+  --font-kings: var(--font-kings);
+  --font-rubik-beastly: var(--font-rubik-beastly);
+  --font-splash: var(--font-splash);
+  --font-ballet: var(--font-ballet);
+  --font-meddon: var(--font-meddon);
+  --font-rubik-glitch: var(--font-rubik-glitch);
+  --font-rubik-microbe: var(--font-rubik-microbe);
+  --font-eater: var(--font-eater);
+  --font-flavors: var(--font-flavors);
+  --font-barrio: var(--font-barrio);
+  --font-kablammo: var(--font-kablammo);
+  --font-nothing-you-could-do: var(--font-nothing-you-could-do);
+
  
   --shadow-xs: 1px 1px 0 0 var(--border);
   --shadow-sm: 2px 2px 0 0 var(--border);
@@ -30,6 +60,81 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
+
+  --color-africanViolet: var(--africanViolet);
+  --color-amethyst: var(--amethyst);
+  --color-burgundy: var(--burgundy);
+  --color-barnRed: var(--barnRed);
+  --color-crimson: var(--crimson);
+  --color-imperialRed: var(--imperialRed);
+  --color-berkeleyBlue: var(--berkeleyBlue);
+  --color-bondiBlue: var(--bondiBlue);
+  --color-carolinaBlue: var(--carolinaBlue);
+  --color-avacado: var(--avacado);
+  --color-brightGreen: var(--brightGreen);
+  --color-darkMossGreen: var(--darkMossGreen);
+  --color-amber: var(--amber);
+  --color-gold: var(--gold);
+  --color-crayolaOrange: var(--crayolaOrange);
+  
+  /* Fear Colors */
+  --color-byzantium: var(--byzantium);
+  --color-cerise: var(--cerise);
+  --color-darkPurple: var(--darkPurple);
+  --color-eggplant: var(--eggplant);
+  --color-grape: var(--grape);
+  --color-indigo: var(--indigo);
+  --color-magenta: var(--magenta);
+  --color-plum: var(--plum);
+  --color-purple: var(--purple);
+  --color-violet: var(--violet);
+  --color-wine: var(--wine);
+  
+  /* Anger Colors */
+  --color-bloodRed: var(--bloodRed);
+  --color-fireEngineRed: var(--fireEngineRed);
+  --color-scarlet: var(--scarlet);
+  --color-ruby: var(--ruby);
+  --color-maroon: var(--maroon);
+  --color-darkRed: var(--darkRed);
+  --color-cardinal: var(--cardinal);
+  --color-vermillion: var(--vermillion);
+  --color-carmine: var(--carmine);
+  --color-roseRed: var(--roseRed);
+  --color-oxblood: var(--oxblood);
+  --color-cherry: var(--cherry);
+  
+  /* Sadness Colors */
+  --color-navy: var(--navy);
+  --color-midnightBlue: var(--midnightBlue);
+  --color-steelBlue: var(--steelBlue);
+  --color-slateBlue: var(--slateBlue);
+  --color-royalBlue: var(--royalBlue);
+  --color-cobalt: var(--cobalt);
+  --color-teal: var(--teal);
+  --color-azure: var(--azure);
+  
+  /* Disgust Colors */
+  --color-olive: var(--olive);
+  --color-forestGreen: var(--forestGreen);
+  --color-emerald: var(--emerald);
+  --color-jade: var(--jade);
+  --color-lime: var(--lime);
+  --color-chartreuse: var(--chartreuse);
+  --color-hunter: var(--hunter);
+  --color-moss: var(--moss);
+  --color-pine: var(--pine);
+  --color-fern: var(--fern);
+  
+  /* Joy Colors */
+  --color-yellow: var(--yellow);
+  --color-sunshine: var(--sunshine);
+  --color-marigold: var(--marigold);
+  --color-saffron: var(--saffron);
+  --color-tangerine: var(--tangerine);
+  --color-coral: var(--coral);
+  --color-mango: var(--mango);
+  --color-honey: var(--honey);
 }
  
 :root {
@@ -49,6 +154,81 @@
   --destructive: #e63946;
   --destructive-foreground: #fff;
   --border: #000;
+
+  --africanViolet: #B284BE;
+  --amethyst: #9966CC;
+  --burgundy: #800020;
+  --barnRed: #7C0902;
+  --crimson: #DC143C;
+  --imperialRed: #ED2939;
+  --berkeleyBlue: #003262;
+  --bondiBlue: #0095B6;
+  --carolinaBlue: #7BAFD4;
+  --avacado: #568203;
+  --brightGreen: #66FF00;
+  --darkMossGreen: #4A5D23;
+  --amber: #FFBF00;
+  --gold: #FFD700;
+  --crayolaOrange: #FF7538;
+  
+  /* Fear Colors */
+  --byzantium: #702963;
+  --cerise: #DE3163;
+  --darkPurple: #301934;
+  --eggplant: #614051;
+  --grape: #6F2DA8;
+  --indigo: #4B0082;
+  --magenta: #FF00FF;
+  --plum: #8B4513;
+  --purple: #800080;
+  --violet: #8F00FF;
+  --wine: #722F37;
+  
+  /* Anger Colors */
+  --bloodRed: #660000;
+  --fireEngineRed: #CE2029;
+  --scarlet: #FF2400;
+  --ruby: #E0115F;
+  --maroon: #800000;
+  --darkRed: #8B0000;
+  --cardinal: #C41E3A;
+  --vermillion: #E34234;
+  --carmine: #960018;
+  --roseRed: #C21E56;
+  --oxblood: #4A0404;
+  --cherry: #990000;
+  
+  /* Sadness Colors */
+  --navy: #000080;
+  --midnightBlue: #191970;
+  --steelBlue: #4682B4;
+  --slateBlue: #6A5ACD;
+  --royalBlue: #4169E1;
+  --cobalt: #0047AB;
+  --teal: #008080;
+  --azure: #007FFF;
+  
+  /* Disgust Colors */
+  --olive: #808000;
+  --forestGreen: #228B22;
+  --emerald: #50C878;
+  --jade: #00A86B;
+  --lime: #32CD32;
+  --chartreuse: #7FFF00;
+  --hunter: #355E35;
+  --moss: #8A9A5B;
+  --pine: #01796F;
+  --fern: #71BC78;
+  
+  /* Joy Colors */
+  --yellow: #FFFF00;
+  --sunshine: #FFD700;
+  --marigold: #EAA221;
+  --saffron: #F4C430;
+  --tangerine: #FFA500;
+  --coral: #FF7F50;
+  --mango: #FF8243;
+  --honey: #FDB347;
 }
  
 .dark {

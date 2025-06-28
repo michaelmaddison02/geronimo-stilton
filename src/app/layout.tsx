@@ -16,7 +16,15 @@ import {
   Eater,
   Flavors,
   Barrio,
-  Kablammo
+  Kablammo,
+  Syne,
+  Space_Mono,
+  Rubik_Mono_One,
+  Imperial_Script,
+  Poiret_One,
+  Barlow_Condensed,
+  Ubuntu,
+  Nothing_You_Could_Do,
 } from "next/font/google";
 import "./globals.css";
  
@@ -146,6 +154,63 @@ const kablammo = Kablammo({
   display: "swap",
 });
 
+const syne = Syne({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-syne",
+  display: "swap",
+});
+
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-space-mono",
+  display: "swap",
+});
+
+const rubikMonoOne = Rubik_Mono_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-rubik-mono-one",
+  display: "swap",
+});
+
+const imperialScript = Imperial_Script({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-imperial-script",
+  display: "swap",
+});
+
+const poiretOne = Poiret_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-poiret-one",
+  display: "swap",
+});
+
+const barlowCondensed = Barlow_Condensed({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-barlow-condensed",
+  display: "swap",
+});
+
+const ubuntu = Ubuntu({
+
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ubuntu",
+  display: "swap",
+});
+
+const nothingYouCouldDo = Nothing_You_Could_Do({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-nothing-you-could-do",
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -172,6 +237,14 @@ export default function RootLayout({
           ${flavors.variable} 
           ${barrio.variable} 
           ${kablammo.variable}
+          ${syne.variable}
+          ${spaceMono.variable}
+          ${rubikMonoOne.variable}
+          ${imperialScript.variable}
+          ${poiretOne.variable}
+          ${barlowCondensed.variable}
+          ${ubuntu.variable}
+          ${nothingYouCouldDo.variable}
       `}>
         {children}
       </body>

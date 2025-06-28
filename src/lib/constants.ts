@@ -1,31 +1,77 @@
 export const colors = {
     fear: {
-        africanViolet: "#B284BE",
-        amethyst: "#9966CC",
-        burgundy: "#800020",
-        // byzantium: "#702963",
-        // cerise: "#DE3163",
-        // darkPurple: "#301934",
+        africanViolet: "text-africanViolet",
+        amethyst: "text-amethyst",
+        burgundy: "text-burgundy",
+        byzantium: "text-byzantium",
+        cerise: "text-cerise",
+        darkPurple: "text-darkPurple",
+        eggplant: "text-eggplant",
+        grape: "text-grape",
+        indigo: "text-indigo",
+        magenta: "text-magenta",
+        plum: "text-plum",
+        purple: "text-purple",
+        violet: "text-violet",
+        wine: "text-wine",
     },
     anger: {
-        barnRed: "#7C0902",
-        crimson: "#DC143C",
-        imperialRed: "#ED2939",
+        barnRed: "text-barnRed",
+        crimson: "text-crimson",
+        imperialRed: "text-imperialRed",
+        bloodRed: "text-bloodRed",
+        fireEngineRed: "text-fireEngineRed",
+        scarlet: "text-scarlet",
+        ruby: "text-ruby",
+        maroon: "text-maroon",
+        darkRed: "text-darkRed",
+        cardinal: "text-cardinal",
+        vermillion: "text-vermillion",
+        carmine: "text-carmine",
+        roseRed: "text-roseRed",
+        oxblood: "text-oxblood",
+        cherry: "text-cherry",
     },
     sadness: {
-        berkeleyBlue: "#003262",
-        bondiBlue: "#0095B6",
-        carolinaBlue: "#7BAFD4",
+        berkeleyBlue: "text-berkeleyBlue",
+        bondiBlue: "text-bondiBlue",
+        carolinaBlue: "text-carolinaBlue",
+        navy: "text-navy",
+        midnightBlue: "text-midnightBlue",
+        steelBlue: "text-steelBlue",
+        slateBlue: "text-slateBlue",
+        royalBlue: "text-royalBlue",
+        cobalt: "text-cobalt",
+        teal: "text-teal",
+        azure: "text-azure",
     },
     disgust: {
-        avacado: "#568203",
-        brightGreen: "#66FF00",
-        darkMossGreen: "#4A5D23"
+        avacado: "text-avacado",
+        brightGreen: "text-brightGreen",
+        darkMossGreen: "text-darkMossGreen",
+        olive: "text-olive",
+        forestGreen: "text-forestGreen",
+        emerald: "text-emerald",
+        jade: "text-jade",
+        lime: "text-lime",
+        chartreuse: "text-chartreuse",
+        hunter: "text-hunter",
+        moss: "text-moss",
+        pine: "text-pine",
+        fern: "text-fern",
     },
     joy: {
-        amber: "#FFBF00",
-        gold: "#FFD700",
-        crayolaOrange: "#FF7538",
+        amber: "text-amber",
+        gold: "text-gold",
+        crayolaOrange: "text-crayolaOrange",
+        yellow: "text-yellow",
+        sunshine: "text-sunshine",
+        marigold: "text-marigold",
+        saffron: "text-saffron",
+        tangerine: "text-tangerine",
+        coral: "text-coral",
+        mango: "text-mango",
+        honey: "text-honey",
     },
 }
 
@@ -55,6 +101,7 @@ export const fonts = {
     joy: {
         BARRIO: 'font-barrio',
         KABLAMMO: 'font-kablammo',
+        NOTHING_YOU_COULD_DO: 'font-nothing-you-could-do',
     },
 }
 
@@ -109,6 +156,5 @@ export function getRandomEmotionStyle(emotion: string): string | null {
     const randomSize = sizeValues[Math.floor(Math.random() * sizeValues.length)];
 
     // Return as Tailwind classes using arbitrary value syntax for colors
-    return `text-[${randomColor}] ${randomFont} ${randomWeight} ${randomSize}`;
+    return `${randomColor} ${randomFont} ${randomWeight} ${randomSize}`;
 }
-

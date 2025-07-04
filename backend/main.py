@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from nrclex import NRCLex
+import nltk
 
 app = FastAPI(
     title="Geronimo Stilton API",
@@ -25,6 +26,10 @@ app.add_middleware(
 # Data model for POST request
 class Message(BaseModel):
     wordList: list[str]
+
+@app.on_event("startup")
+def download_nltk_data():
+    nltk.download("punkt")
 
 @app.get("/")
 async def root():

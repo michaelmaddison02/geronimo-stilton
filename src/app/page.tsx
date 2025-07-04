@@ -99,8 +99,8 @@ export default function Home() {
       const words = text.split(' ');
 
       // local url: http://127.0.0.1:8000/api/sentimentAnalysis
-      // vercel url: https://geronimo-stilton.vercel.app/api/sentimentAnalysis
-      const response = await fetch("https://geronimo-stilton.vercel.app/api/sentimentAnalysis", {
+      // render url: https://geronimo-stilton.onrender.com/api/sentimentAnalysis
+      const response = await fetch("https://geronimo-stilton.onrender.com/api/sentimentAnalysis", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

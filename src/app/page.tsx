@@ -90,8 +90,9 @@ export default function Home() {
   };
 
   const handleGenerate = async () => {
-    // Don't generate if there's no text
+    // Clear styled text if there's no input text
     if (!text.trim()) {
+      setStyledText([]);
       return;
     }
 
